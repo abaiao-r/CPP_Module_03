@@ -6,7 +6,7 @@
 /*   By: abaiao-r <abaiao-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 14:46:28 by abaiao-r          #+#    #+#             */
-/*   Updated: 2023/09/20 18:36:21 by abaiao-r         ###   ########.fr       */
+/*   Updated: 2023/09/20 18:47:55 by abaiao-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,14 @@ int main(void)
     //DiamondTrap
     DiamondTrap diamondTrap("DiamondTrap");
     DiamondTrap diamondTrap2("Enemy");
+    //copy constructor
+    DiamondTrap diamondTrap4(diamondTrap2);
+
 
     std::cout << "Display stats:" << std::endl;
     diamondTrap2.displayStats();
     diamondTrap.displayStats();
+    diamondTrap4.displayStats();
 
 
     std::cout << "\n\n\nRound 1:" << std::endl;

@@ -6,7 +6,7 @@
 /*   By: abaiao-r <abaiao-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 14:47:08 by abaiao-r          #+#    #+#             */
-/*   Updated: 2023/09/20 18:28:27 by abaiao-r         ###   ########.fr       */
+/*   Updated: 2023/09/20 18:46:58 by abaiao-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ ClapTrap::ClapTrap(void)
     this->_hit_points = ClapTrap::HIT_POINTS;
     this->_energy_points = ClapTrap::ENERGY_POINTS;
     this->_attack_damage = ClapTrap::ATTACK_DAMAGE;
-    std::cout << BOLDCYAN << "ClapTrap " << this->getName()
-        << " default construtor called this->setHitPoints(FragTrap::_hit_points) = FragTrap::_hit_points;" << RESET << std::endl;
+    std::cout << BOLDCYAN << "ClapTrap default constructor called" << RESET 
+        << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name)
