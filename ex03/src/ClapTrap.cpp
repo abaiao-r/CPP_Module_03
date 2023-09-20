@@ -6,7 +6,7 @@
 /*   By: abaiao-r <abaiao-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 14:47:08 by abaiao-r          #+#    #+#             */
-/*   Updated: 2023/09/20 18:46:58 by abaiao-r         ###   ########.fr       */
+/*   Updated: 2023/09/20 19:02:32 by abaiao-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -179,5 +179,4 @@ void ClapTrap::displayStats(void)
         << this->_hit_points  << " hit points, " << this->_energy_points 
         << " energy points and " << this->_attack_damage << " attack damage."
         << RESET << std::endl;
-    
 }

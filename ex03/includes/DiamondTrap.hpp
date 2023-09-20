@@ -6,7 +6,7 @@
 /*   By: abaiao-r <abaiao-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 20:17:52 by abaiao-r          #+#    #+#             */
-/*   Updated: 2023/09/20 18:26:15 by abaiao-r         ###   ########.fr       */
+/*   Updated: 2023/09/20 19:02:14 by abaiao-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,6 @@ public:
     void displayStats(void);
     void attack(std::string const &target);
     void whoAmI(void);
-    using FragTrap::getHitPoints;
-    using ScavTrap::getEnergyPoints;
-    using FragTrap::getAttackDamage;
 };
 
 #endif

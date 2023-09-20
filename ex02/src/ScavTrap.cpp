@@ -6,7 +6,7 @@
 /*   By: abaiao-r <abaiao-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 17:22:25 by abaiao-r          #+#    #+#             */
-/*   Updated: 2023/09/18 20:12:41 by abaiao-r         ###   ########.fr       */
+/*   Updated: 2023/09/20 19:36:36 by abaiao-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,9 @@ ScavTrap::~ScavTrap(void)
         << " destructor called" << RESET << std::endl;
 }
 
+/* Copy constructor:
+** Assign all values of the src to this instance
+*/
 ScavTrap::ScavTrap(ScavTrap const &src)
 {
     std::cout << BOLDCYAN << "ScavTrapp " << this->getName() 
@@ -43,6 +46,9 @@ ScavTrap::ScavTrap(ScavTrap const &src)
     *this = src;
 }
 
+/* operator=():
+** Assignation operator overload
+*/
 ScavTrap &ScavTrap::operator=(ScavTrap const &src)
 {
     std::cout << BOLDCYAN << "ScavTrapp " << this->getName() 
@@ -54,6 +60,9 @@ ScavTrap &ScavTrap::operator=(ScavTrap const &src)
     return (*this);
 }
 
+/* attack():
+** display a message when the instance attacks target
+*/
 void ScavTrap::attack(const std::string &target)
 {
     if (this->getEnergyPoints() > 0 && this->getHitPoints() > 0)
@@ -79,12 +88,18 @@ void ScavTrap::attack(const std::string &target)
 
 }
 
+/*guardGate():
+** display a message when the instance enters in Gate keeper mode
+*/
 void ScavTrap::guardGate(void)
 {
     std::cout << BOLDYELLOW << "ScavTrap " << this->getName() 
         << " has entered in Gate keeper mode" << RESET << std::endl;
 }
 
+/* displayStats():
+** Displays the stats of the instance
+*/
 void ScavTrap::displayStats(void)
 {
     std::cout << BOLDBLUE << "Scavtrap " << this->getName() << " has " 

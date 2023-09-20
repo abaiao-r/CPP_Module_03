@@ -6,7 +6,7 @@
 /*   By: abaiao-r <abaiao-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 14:46:28 by abaiao-r          #+#    #+#             */
-/*   Updated: 2023/09/18 20:12:38 by abaiao-r         ###   ########.fr       */
+/*   Updated: 2023/09/20 19:12:12 by abaiao-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,12 +91,14 @@ int main(void)
     //fragTrap
     FragTrap fragTrap("fragTrap");
     FragTrap fragTrap2("Enemy");
+    FragTrap fragTrap3;
     
-
+    fragTrap3 = fragTrap2;
 
     std::cout << "Display stats:" << std::endl;
     fragTrap2.displayStats();
     fragTrap.displayStats();
+    fragTrap3.displayStats();
 
     std::cout << "\n\n\nRound 1:" << std::endl;
     fragTrap.attack(fragTrap2.getName());

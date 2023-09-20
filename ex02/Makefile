@@ -6,7 +6,7 @@
 #    By: abaiao-r <abaiao-r@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/18 14:30:45 by abaiao-r          #+#    #+#              #
-#    Updated: 2023/09/18 20:14:44 by abaiao-r         ###   ########.fr        #
+#    Updated: 2023/09/20 19:14:12 by abaiao-r         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ SRCS = 	$(SRCDIR)/main.cpp \
 OBJS = 	$(SRCS:$(SRCDIR)/%.cpp=$(OBJDIR)/%.o)
 
 # Targets
-NAME = Serena,_my_love!
+NAME = Repetitive_work
 
 all: 	$(NAME)
 
