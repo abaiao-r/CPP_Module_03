@@ -6,7 +6,7 @@
 /*   By: abaiao-r <abaiao-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 14:37:18 by abaiao-r          #+#    #+#             */
-/*   Updated: 2023/09/18 17:53:05 by abaiao-r         ###   ########.fr       */
+/*   Updated: 2023/09/20 15:54:49 by abaiao-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@
 
 class ClapTrap
 {
-    private:
+    protected:
         std::string name;
         unsigned int hit_points;
         unsigned int energy_points;

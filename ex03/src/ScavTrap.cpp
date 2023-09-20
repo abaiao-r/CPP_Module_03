@@ -6,19 +6,23 @@
 /*   By: abaiao-r <abaiao-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 17:22:25 by abaiao-r          #+#    #+#             */
-/*   Updated: 2023/09/18 18:46:14 by abaiao-r         ###   ########.fr       */
+/*   Updated: 2023/09/20 18:30:08 by abaiao-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ScavTrap.hpp"
 
+const int ScavTrap::HIT_POINTS = 100;
+const int ScavTrap::ENERGY_POINTS = 50;
+const int ScavTrap::ATTACK_DAMAGE = 20;
+
 ScavTrap::ScavTrap(void) : ClapTrap("Default")
 {
-    std::cout << BOLDCYAN << this->getName() 
-        << " ScavTrap default constructor called" << RESET << std::endl;
-    this->setHitPoints(100);
-    this->setEnergyPoints(50);
-    this->setAttackDamage(20);
+    std::cout << BOLDCYAN << "ScavTrap " << this->getName() 
+        << " default constructor called" << RESET << std::endl;
+    this->setHitPoints(ScavTrap::HIT_POINTS);
+    this->setEnergyPoints(ScavTrap::ENERGY_POINTS);
+    this->setAttackDamage(ScavTrap::ATTACK_DAMAGE);
 }
 
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name)

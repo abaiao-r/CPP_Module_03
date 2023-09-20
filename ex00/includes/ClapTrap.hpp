@@ -6,7 +6,7 @@
 /*   By: abaiao-r <abaiao-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 14:37:18 by abaiao-r          #+#    #+#             */
-/*   Updated: 2023/09/18 17:51:23 by abaiao-r         ###   ########.fr       */
+/*   Updated: 2023/09/20 14:13:52 by abaiao-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,9 +52,9 @@ class ClapTrap
         int getAttackDamage(void);
 
         void setName(std::string name);
-        void setHitPoints(int hit_points);
-        void setEnergyPoints(int energy_points);
-        void setAttackDamage(int attack_damage);
+        void setHitPoints(unsigned int hit_points);
+        void setEnergyPoints(unsigned int energy_points);
+        void setAttackDamage(unsigned int attack_damage);
 };
 
 #endif

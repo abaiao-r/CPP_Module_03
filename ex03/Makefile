@@ -6,7 +6,7 @@
 #    By: abaiao-r <abaiao-r@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/18 14:30:45 by abaiao-r          #+#    #+#              #
-#    Updated: 2023/09/18 20:22:15 by abaiao-r         ###   ########.fr        #
+#    Updated: 2023/09/20 13:14:41 by abaiao-r         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ SRCS = 	$(SRCDIR)/main.cpp \
 OBJS = 	$(SRCS:$(SRCDIR)/%.cpp=$(OBJDIR)/%.o)
 
 # Targets
-NAME = Now_it's_weird!
+NAME = Now_it_is_weird!
 
 all: 	$(NAME)
 

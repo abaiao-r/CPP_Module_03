@@ -6,7 +6,7 @@
 /*   By: abaiao-r <abaiao-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 14:47:08 by abaiao-r          #+#    #+#             */
-/*   Updated: 2023/09/18 18:38:04 by abaiao-r         ###   ########.fr       */
+/*   Updated: 2023/09/20 15:55:39 by abaiao-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ ClapTrap::ClapTrap(void)
     std::cout << BOLDCYAN << "ClapTrap default constructor called" << RESET 
         << std::endl;
     this->name = "Default";
-    this->hit_points = 100;
-    this->energy_points = 150;
-    this->attack_damage = 20;
+    this->hit_points = 10;
+    this->energy_points = 10;
+    this->attack_damage = 0;
 }
 
 ClapTrap::ClapTrap(std::string name)
@@ -28,8 +28,8 @@ ClapTrap::ClapTrap(std::string name)
         << std::endl;
     this->name = name;
     this->hit_points = 100;
-    this->energy_points = 50;
-    this->attack_damage = 20;
+    this->energy_points = 10;
+    this->attack_damage = 0;
 }
 
 ClapTrap::~ClapTrap(void)

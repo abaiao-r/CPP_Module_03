@@ -6,7 +6,7 @@
 /*   By: abaiao-r <abaiao-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 14:47:08 by abaiao-r          #+#    #+#             */
-/*   Updated: 2023/09/18 18:38:30 by abaiao-r         ###   ########.fr       */
+/*   Updated: 2023/09/20 13:08:45 by abaiao-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -153,17 +153,17 @@ void ClapTrap::setName(std::string name)
     this->name = name;
 }
 
-void ClapTrap::setHitPoints(int hit_points)
+void ClapTrap::setHitPoints(unsigned int hit_points)
 {
     this->hit_points = hit_points;
 }
 
-void ClapTrap::setEnergyPoints(int energy_points)
+void ClapTrap::setEnergyPoints(unsigned int energy_points)
 {
     this->energy_points = energy_points;
 }
 
-void ClapTrap::setAttackDamage(int attack_damage)
+void ClapTrap::setAttackDamage(unsigned int attack_damage)
 {
     this->attack_damage = attack_damage;
 }
