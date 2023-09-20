@@ -6,7 +6,7 @@
 /*   By: abaiao-r <abaiao-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 20:22:55 by abaiao-r          #+#    #+#             */
-/*   Updated: 2023/09/20 18:33:41 by abaiao-r         ###   ########.fr       */
+/*   Updated: 2023/09/20 19:55:32 by abaiao-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,17 +62,26 @@ DiamondTrap::~DiamondTrap(void)
         << " destructor called" << RESET << std::endl;
 }
 
+/* whoAmI():
+** display a message with the name of the instance and the name of the ClapTrap
+*/
 void DiamondTrap::whoAmI(void)
 {
-    std::cout << BOLDBLUE << "I am " << this->_name << " and my ClapTrap name is " 
-        << ClapTrap::getName() << RESET << std::endl;
+    std::cout << BOLDBLUE << "I am " << this->_name 
+    << " and my ClapTrap name is " << ClapTrap::getName() << RESET << std::endl;
 }
 
+/* attack():
+** display a message when the instance attacks target
+*/
 void DiamondTrap::attack(const std::string &target)
 {
     this->ScavTrap::attack(target);
 }
 
+/* displayStats():
+** Display the stats of the instance
+*/
 void DiamondTrap::displayStats(void)
 {
     std::cout << BOLDBLUE << "DiamondTrap " << this->_name << " has " 
