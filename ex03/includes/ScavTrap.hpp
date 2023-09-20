@@ -6,7 +6,7 @@
 /*   By: abaiao-r <abaiao-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 16:53:28 by abaiao-r          #+#    #+#             */
-/*   Updated: 2023/09/20 18:27:34 by abaiao-r         ###   ########.fr       */
+/*   Updated: 2023/09/20 22:17:04 by abaiao-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,11 @@
 
 class ScavTrap : virtual public ClapTrap
 {
-    public:
+    protected:
         static const int HIT_POINTS;
         static const int ENERGY_POINTS;
         static const int ATTACK_DAMAGE;
+    public:
 
         ScavTrap(void);
         ScavTrap(std::string name);

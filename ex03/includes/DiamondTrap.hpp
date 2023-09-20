@@ -6,7 +6,7 @@
 /*   By: abaiao-r <abaiao-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 20:17:52 by abaiao-r          #+#    #+#             */
-/*   Updated: 2023/09/20 19:02:14 by abaiao-r         ###   ########.fr       */
+/*   Updated: 2023/09/20 22:28:04 by abaiao-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,6 @@ private:
 
 
 public:
-    static const int HIT_POINTS;
-    static const int ENERGY_POINTS;
-    static const int ATTACK_DAMAGE;
 
     DiamondTrap(void);
     DiamondTrap(std::string name);
